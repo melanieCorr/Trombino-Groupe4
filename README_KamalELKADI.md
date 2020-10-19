@@ -5,6 +5,17 @@ Ce trombinoscope va présenter tous les personnes qui ont fait le test du covid.
 Les personnes qui ont fait le test en leur crée un profil. Chaque profil est composé des informations suivantes : Nom, Prénom, Age, Téléphone, Email, résultat, symptome, date de test, date de résultat, les personnes côtoyé.
 
 # Critères de filtrage
+### Représentation d'une personne
+- nom,prénom
+- âge
+- Adresse
+- Email
+- Résultat au test
+- Symptomes
+- Date du test
+- Des des résultats
+- Personnes cotoyées
+
 ### filtrage de la liste des personnes qui ont été tester
 - Selon les cas : afficher la liste des personnes positive, les personnes negative.
 - Selon les départements : afficher la liste des personnes tester selon les département choisis.
