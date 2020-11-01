@@ -1,0 +1,4 @@
+table,colonne,lien LOD,,,
+youtubeur,,https://schema.org/Person,,,
+chaine,,http://elite.polito.it/ontologies/eupont.owl#Channel,,,http://rdfs.org/sioc/ns#has_subscriber
+utilisateur,,http://rdfs.org/sioc/ns#subscriber_of,,,

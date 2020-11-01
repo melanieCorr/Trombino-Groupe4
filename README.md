@@ -37,3 +37,6 @@ Ainsi, ce trombinoscope va présenter les influenceurs et influenceuses du Youtu
 - Selon le nombre d'abonnés : Afficher les statistiques des nombres d'abonnés
 - Selon le genre de vidéos (Jeux-vidéos, sport, etc...) : Afficher les statistiques des genres de vidéos existantes sur Youtube France
 - Selon l'âge : Afficher les statistiques des âges sur Youtube France
+
+# Lien spreadsheet 
+https://docs.google.com/spreadsheets/d/1Uf420AOSAMUSyLIZIJH87b_gol8rlyZrY2BK4KFHvEg/edit?usp=sharing
