@@ -1,4 +1,4 @@
 table,colonne,lien LOD,,,
-youtubeur,,https://schema.org/Person,,,
-chaine,,http://elite.polito.it/ontologies/eupont.owl#Channel,,,http://rdfs.org/sioc/ns#has_subscriber
-utilisateur,,http://rdfs.org/sioc/ns#subscriber_of,,,
+youtubeur,idyoutubeur/nom/prenom/date_naissance/autreActivites/debut_youtube,https://schema.org/Person,,,
+chaine,idchaine/nom_chaine/genre/date_creation/nb_abonnes/nb_videos/nb_vues/youtubeur_idyoutubeur,http://elite.polito.it/ontologies/eupont.owl#Channel,,,http://rdfs.org/sioc/ns#has_subscriber
+utilisateur,idutilisateur/nom/prenom/username/email/password,http://rdfs.org/sioc/ns#subscriber_of,,,
