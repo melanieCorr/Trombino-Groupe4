@@ -4,7 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix you: <http://elite.polito.it/ontologies/eupont.owl#Channel> .
+@prefix you: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
 @prefix teach: <http://linkedscience.org/teach/ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix schema: <http://schema.org/>.
