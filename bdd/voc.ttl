@@ -10,7 +10,7 @@
 @prefix schema: <http://schema.org/>.
 @prefix elite: <http://elite.polito.it/ontologies/eupont.owl/>.
 
-<http://elite.polito.it/ontologies/eupont.owl#Channel> a owl:Ontology ;
+<https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> a owl:Ontology ;
     dcterms:title "Trombinoscope des Youtubeurs(euse) Français(es)" .
 
 
