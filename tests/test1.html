@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Réseau de forces</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <style>
+        body{
+            background: black;
+        }
+    #dataviz{
+        background-color:whitesmoke;
+    }
+    </style>
+<body>
+<div id='dataviz'></div>
+</body>
 
+<script>
+let urlData = "http://localhost/omeka/api/items";
+
+d3.json(urlData).then(function(data) {
+  console.log(data);
+  d3.select('#dataviz').selectAll('div').data(data).enter().append('div')
+      .html(d=>d["dcterms:title"][0]["@value"]);
+});
+
+</script>
+</html>
