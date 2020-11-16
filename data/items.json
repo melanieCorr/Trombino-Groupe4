@@ -1,0 +1,299 @@
+[
+    {
+        "@context": "http://localhost/omeka-s-3.0.1/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/items/2",
+        "@type": [
+            "o:Item",
+            "chaine:voc.ttlYoutubeur"
+        ],
+        "o:id": 2,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_classes/130",
+            "o:id": 130
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_templates/3",
+            "o:id": 3
+        },
+        "o:thumbnail": null,
+        "o:title": "Lucas Hauchard",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2020-11-15T13:12:28+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2020-11-16T11:33:26+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [
+            {
+                "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
+                "o:id": 16
+            }
+        ],
+        "o:site": [],
+        "foaf:firstName": [
+            {
+                "type": "literal",
+                "property_id": 139,
+                "property_label": "firstName",
+                "is_public": true,
+                "@value": "Lucas"
+            }
+        ],
+        "foaf:family_name": [
+            {
+                "type": "literal",
+                "property_id": 144,
+                "property_label": "family_name",
+                "is_public": true,
+                "@value": "Hauchard"
+            }
+        ],
+        "foaf:interest": [
+            {
+                "type": "literal",
+                "property_id": 163,
+                "property_label": "interest",
+                "is_public": true,
+                "@value": "Doublage, Chanson"
+            }
+        ],
+        "foaf:birthday": [
+            {
+                "type": "literal",
+                "property_id": 182,
+                "property_label": "birthday",
+                "is_public": true,
+                "@value": "1997-01-27"
+            }
+        ],
+        "chaine:voc.ttlhasChannel": [
+            {
+                "type": "literal",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@value": "Squeezie"
+            }
+        ],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Lucas Hauchard"
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s-3.0.1/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/items/3",
+        "@type": [
+            "o:Item",
+            "chaine:voc.ttlYoutubeur"
+        ],
+        "o:id": 3,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_classes/130",
+            "o:id": 130
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_templates/3",
+            "o:id": 3
+        },
+        "o:thumbnail": null,
+        "o:title": "Cyprien Iov",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2020-11-15T13:14:40+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2020-11-16T11:33:15+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [
+            {
+                "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
+                "o:id": 16
+            }
+        ],
+        "o:site": [],
+        "foaf:firstName": [
+            {
+                "type": "literal",
+                "property_id": 139,
+                "property_label": "firstName",
+                "is_public": true,
+                "@value": "Cyprien"
+            }
+        ],
+        "foaf:family_name": [
+            {
+                "type": "literal",
+                "property_id": 144,
+                "property_label": "family_name",
+                "is_public": true,
+                "@value": "Iov"
+            }
+        ],
+        "foaf:interest": [
+            {
+                "type": "literal",
+                "property_id": 163,
+                "property_label": "interest",
+                "is_public": true,
+                "@value": "Blogueur, acteur, scénariste de films et de bande dessinée"
+            }
+        ],
+        "foaf:birthday": [
+            {
+                "type": "literal",
+                "property_id": 182,
+                "property_label": "birthday",
+                "is_public": true,
+                "@value": "1989-05-12"
+            }
+        ],
+        "chaine:voc.ttlhasChannel": [
+            {
+                "type": "literal",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@value": "Cyprien "
+            }
+        ],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Cyprien Iov"
+            }
+        ]
+    },
+    {
+        "@context": "http://localhost/omeka-s-3.0.1/omeka-s/api-context",
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/items/4",
+        "@type": [
+            "o:Item",
+            "chaine:voc.ttlYoutubeur"
+        ],
+        "o:id": 4,
+        "o:is_public": true,
+        "o:owner": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/users/1",
+            "o:id": 1
+        },
+        "o:resource_class": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_classes/130",
+            "o:id": 130
+        },
+        "o:resource_template": {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_templates/3",
+            "o:id": 3
+        },
+        "o:thumbnail": null,
+        "o:title": "Norman Thavaud",
+        "thumbnail_display_urls": {
+            "large": null,
+            "medium": null,
+            "square": null
+        },
+        "o:created": {
+            "@value": "2020-11-15T13:15:51+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:modified": {
+            "@value": "2020-11-16T11:33:05+00:00",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "o:media": [],
+        "o:item_set": [
+            {
+                "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
+                "o:id": 16
+            }
+        ],
+        "o:site": [],
+        "foaf:firstName": [
+            {
+                "type": "literal",
+                "property_id": 139,
+                "property_label": "firstName",
+                "is_public": true,
+                "@value": "Norman"
+            }
+        ],
+        "foaf:family_name": [
+            {
+                "type": "literal",
+                "property_id": 144,
+                "property_label": "family_name",
+                "is_public": true,
+                "@value": "Thavaud"
+            }
+        ],
+        "foaf:interest": [
+            {
+                "type": "literal",
+                "property_id": 163,
+                "property_label": "interest",
+                "is_public": true,
+                "@value": "Acteur, doubleur, humoriste"
+            }
+        ],
+        "foaf:birthday": [
+            {
+                "type": "literal",
+                "property_id": 182,
+                "property_label": "birthday",
+                "is_public": true,
+                "@value": "1987-04-14"
+            }
+        ],
+        "chaine:voc.ttlhasChannel": [
+            {
+                "type": "literal",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@value": "Norman fait des vidéos"
+            }
+        ],
+        "dcterms:title": [
+            {
+                "type": "literal",
+                "property_id": 1,
+                "property_label": "Title",
+                "is_public": true,
+                "@value": "Norman Thavaud "
+            }
+        ]
+    }
+]
