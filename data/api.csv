@@ -1,4 +1,7 @@
 titre,url
+Liste des youtubeurs,/api/items?item_set_id=13
+Liste des utilisateurs,/api/items?item_set_id=14
+Liste des chaines,/api/items?item_set_id=15
 Lucas Hauchard,/api/items/2
 Cyprien Iov,/api/items/3
 Norman Thavaud,/api/items/4

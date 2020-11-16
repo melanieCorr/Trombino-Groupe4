@@ -2,6 +2,10 @@
 
 Un trombinoscope est une liste des photographies des membres d'une organisation, d'un groupe, d'une classe (à l'école). C'est un outil qui sert principalement à faire connaitre les membres d'une organisation.
 
+# Lien Github Pages 
+Readme : https://melaniecorr.github.io/Trombino-Groupe4/
+Template : https://melaniecorr.github.io/Trombino-Groupe4/template/
+
 # Contexte du projet 
 Internet connaît un grand succès dans le partage de contenu vidéo. 
 Ainsi, ce trombinoscope va présenter les influenceurs et influenceuses du Youtube France afin de favoriser la découverte de nouvelles chaines. 
