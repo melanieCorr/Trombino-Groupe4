@@ -1,6 +1,12 @@
-
-@prefix you: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix you: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
+@prefix chaine: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
 
 
 <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> a owl:Ontology ;
@@ -13,38 +19,28 @@ you:Youtubeur a rdfs:Class ;
     owl:sameAs foaf:Person ;    
     vs:term_status "experimental" .
 
-you:nbAbonnes a rdf:Property ;
-    rdfs:label "Nombre d'abonnés" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-you:nomChaine a rdf:Property ;
-    rdfs:label "Nom de la chaine" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-you:nbVideos a rdf:Property ;
-    rdfs:label "Nombre de vidéos" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-you:nbVues a rdf:Property ;
-    rdfs:label "Nombre de vue" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-
-you:hasYoutubeur a rdf:Property ;
-    rdfs:label "hasYoutubeur" ;
-    rdfs:comment "La propriétaire de cette chaine" ;
-    rdfs:domain o:Resource ;
-    rdfs:isDefinedBy you: .       
-
 you:hasChannel a rdf:Property ;
     rdfs:label "hasChannel" ;
     rdfs:comment "La vidéo appartient à cette personne" ;
     rdfs:domain o:Resource ;
     rdfs:isDefinedBy you: . 
+
+chaine:Chaine a rdfs:Class ;
+    rdfs:label "Chaine" ;
+    rdfs:domain o:Resource ;   
+    vs:term_status "experimental" .
+
+chaine:nomChaine a rdf:Property ;
+    rdfs:label "Nom de la chaine" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+chaine:hasYoutubeur a rdf:Property ;
+    rdfs:label "hasYoutubeur" ;
+    rdfs:comment "La propriétaire de cette chaine" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy you: .       
+
 
 
 

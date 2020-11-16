@@ -1,7 +1,4 @@
 titre,url
-Liste des youtubeurs,/api/items?item_set_id=13
-Liste des utilisateurs,/api/items?item_set_id=14
-Liste des chaines,/api/items?item_set_id=15
 Lucas Hauchard,/api/items/2
 Cyprien Iov,/api/items/3
 Norman Thavaud,/api/items/4
@@ -12,3 +9,6 @@ Mélanie,/api/items/8
 Kamal,/api/items/9
 Halim,/api/items/10
 Ibrahim,/api/items/11
+Liste des youtubeurs,/api/items?resource_class_id%5B%5D=130
+Liste des utilisateurs,/api/items?resource_class_id%5B%5D=94
+Liste des chaines,/api/items?resource_class_id%5B%5D=131

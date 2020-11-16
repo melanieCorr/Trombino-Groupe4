@@ -23,47 +23,37 @@
     </body>
 
     <script>
-        let urlData = "http://localhost/omeka-s-3.0.1/omeka-s/api/items";
+        let urlDataUtilisateur = "http://localhost/omeka-s-3.0.1/omeka-s/api/items?resource_class_id%5B%5D=94";
+        let urlDataYoutubeur = "http://localhost/omeka-s-3.0.1/omeka-s/api/items?resource_class_id%5B%5D=130";
+        let urlDataChaine = "http://localhost/omeka-s-3.0.1/omeka-s/api/items?resource_class_id%5B%5D=131";
 
-        d3.json(urlData).then(function(data) {
-                getUtilisateur(data); 
-                getYoutubeur(data); 
-                getChannel(data); 
+        d3.json(urlDataUtilisateur).then(function(data) {
+            data.forEach(d => {
+                d3.select('#utilisateur').append('div').text(
+                    "Utilisateur : " + d["foaf:familyName"][0]["@value"] + " " + d["foaf:firstName"][0]["@value"] +
+                    " - " + d["foaf:mbox"][0]["@value"] + ' - ' + d["foaf:nick"][0]["@value"]
+                );
+            })
         });
 
-        function getUtilisateur(data) {
+        d3.json(urlDataYoutubeur).then(function(data) {
             data.forEach(d => {
-                if (d["dcterms:title"][0]["@value"] === "Utilisateur") {
-                    d3.select('#utilisateur').append('div').text(
-                        "Utilisateur : " + d["foaf:familyName"][0]["@value"] + " " + d["foaf:firstName"][0]["@value"] +
-                        " - " + d["foaf:mbox"][0]["@value"] + ' - ' + d["foaf:nick"][0]["@value"]
-                    );
-                }
-            }) 
-        }
+                d3.select('#youtubeur').append('div').text(
+                    "Youtubeur : " + d["foaf:family_name"][0]["@value"] + " " + d["foaf:firstName"][0]["@value"] + 
+                    " - " + d["foaf:birthday"][0]["@value"] + ' - ' + d["foaf:interest"][0]["@value"] +
+                    " - " + d["chaine:voc.ttlhasChannel"][0]["@value"]
+                );
+            })
+        });
 
-        function getYoutubeur(data) {
+        d3.json(urlDataChaine).then(function(data) {
             data.forEach(d => {
-                if (d["dcterms:title"][0]["@value"] === "Youtubeur") {
-                    d3.select('#youtubeur').append('div').text(
-                        "Youtubeur : " + d["foaf:family_name"][0]["@value"] + " " + d["foaf:firstName"][0]["@value"] + 
-                        " - " + d["foaf:birthday"][0]["@value"] + ' - ' + d["foaf:interest"][0]["@value"] +
-                        " - " + d["Channel:voc.ttlhasChannel"][0]["@value"]
-                    );
-                }
-            }) 
-        }
-
-        function getChannel(data) {
-            data.forEach(d => {
-                if (d["dcterms:title"][0]["@value"] === "Chaine") {
-                    d3.select('#chaine').append('div').text(
-                        "Chaîne Youtube : " + d["Channel:voc.ttlnomChaine"][0]["@value"] + " - " + d["dcterms:type"][0]["@value"] + 
-                        " - " + d["dcterms:created"][0]["@value"] + " - " + d["Channel:voc.ttlhasYoutubeur"][0]["@value"]
-                    );
-                }
-            }) 
-        }
-
+                d3.select('#chaine').append('div').text(
+                    "Chaîne Youtube : " + d["chaine:voc.ttlnomChaine"][0]["@value"] + " - " + d["dcterms:type"][0]["@value"] + 
+                    " - " + d["dcterms:created"][0]["@value"] + " - " + d["chaine:voc.ttlhasYoutubeur"][0]["@value"]
+                );
+            })
+        });
+        
     </script>
 </html>
