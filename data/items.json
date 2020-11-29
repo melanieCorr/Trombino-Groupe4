@@ -23,19 +23,24 @@
         "o:thumbnail": null,
         "o:title": "Lucas Hauchard",
         "thumbnail_display_urls": {
-            "large": null,
-            "medium": null,
-            "square": null
+            "large": "http://localhost/omeka-s-3.0.1/omeka-s/files/large/ab3162b6768aab38edddc57730feb305e8beee9a.jpg",
+            "medium": "http://localhost/omeka-s-3.0.1/omeka-s/files/medium/ab3162b6768aab38edddc57730feb305e8beee9a.jpg",
+            "square": "http://localhost/omeka-s-3.0.1/omeka-s/files/square/ab3162b6768aab38edddc57730feb305e8beee9a.jpg"
         },
         "o:created": {
             "@value": "2020-11-15T13:12:28+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "o:modified": {
-            "@value": "2020-11-16T11:33:26+00:00",
+            "@value": "2020-11-29T10:59:50+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
-        "o:media": [],
+        "o:media": [
+            {
+                "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/media/19",
+                "o:id": 19
+            }
+        ],
         "o:item_set": [
             {
                 "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
@@ -86,6 +91,13 @@
                 "property_label": "hasChannel",
                 "is_public": true,
                 "@value": "Squeezie"
+            }, 
+            {
+                "type": "uri",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@id": "https://www.youtube.com/user/aMOODIEsqueezie"
             }
         ],
         "dcterms:title": [
@@ -122,19 +134,24 @@
         "o:thumbnail": null,
         "o:title": "Cyprien Iov",
         "thumbnail_display_urls": {
-            "large": null,
-            "medium": null,
-            "square": null
+            "large": "http://localhost/omeka-s-3.0.1/omeka-s/files/large/27fcc9ef17af3de3fb13e8991addd378f4f4a0d7.jpg",
+            "medium": "http://localhost/omeka-s-3.0.1/omeka-s/files/medium/27fcc9ef17af3de3fb13e8991addd378f4f4a0d7.jpg",
+            "square": "http://localhost/omeka-s-3.0.1/omeka-s/files/square/27fcc9ef17af3de3fb13e8991addd378f4f4a0d7.jpg"
         },
         "o:created": {
             "@value": "2020-11-15T13:14:40+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "o:modified": {
-            "@value": "2020-11-16T11:33:15+00:00",
+            "@value": "2020-11-29T11:00:12+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
-        "o:media": [],
+        "o:media": [
+        {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/media/20",
+            "o:id": 20
+        }
+        ],
         "o:item_set": [
             {
                 "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
@@ -185,6 +202,13 @@
                 "property_label": "hasChannel",
                 "is_public": true,
                 "@value": "Cyprien "
+            }, 
+            {
+                "type": "uri",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@id": "https://www.youtube.com/user/MonsieurDream"
             }
         ],
         "dcterms:title": [
@@ -221,19 +245,24 @@
         "o:thumbnail": null,
         "o:title": "Norman Thavaud",
         "thumbnail_display_urls": {
-            "large": null,
-            "medium": null,
-            "square": null
+            "large": "http://localhost/omeka-s-3.0.1/omeka-s/files/large/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg",
+            "medium": "http://localhost/omeka-s-3.0.1/omeka-s/files/medium/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg",
+            "square": "http://localhost/omeka-s-3.0.1/omeka-s/files/square/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg"
         },
         "o:created": {
             "@value": "2020-11-15T13:15:51+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
         "o:modified": {
-            "@value": "2020-11-16T11:33:05+00:00",
+            "@value": "2020-11-29T11:00:26+00:00",
             "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
         },
-        "o:media": [],
+        "o:media": [
+            {
+                "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/media/21",
+                "o:id": 21
+            }
+        ],
         "o:item_set": [
             {
                 "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
@@ -248,7 +277,7 @@
                 "property_label": "firstName",
                 "is_public": true,
                 "@value": "Norman"
-            }
+            }  
         ],
         "foaf:family_name": [
             {
@@ -284,6 +313,13 @@
                 "property_label": "hasChannel",
                 "is_public": true,
                 "@value": "Norman fait des vidéos"
+            }, 
+            {
+                "type": "uri",
+                "property_id": 223,
+                "property_label": "hasChannel",
+                "is_public": true,
+                "@id": "https://www.youtube.com/user/NormanFaitDesVideos"
             }
         ],
         "dcterms:title": [
@@ -295,5 +331,5 @@
                 "@value": "Norman Thavaud "
             }
         ]
-    }
+    }   
 ]

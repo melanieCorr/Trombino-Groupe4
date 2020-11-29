@@ -1,0 +1,111 @@
+{
+    "@context": "http://localhost/omeka-s-3.0.1/omeka-s/api-context",
+    "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/items/4",
+    "@type": [
+        "o:Item",
+        "chaine:voc.ttlYoutubeur"
+    ],
+    "o:id": 4,
+    "o:is_public": true,
+    "o:owner": {
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/users/1",
+        "o:id": 1
+    },
+    "o:resource_class": {
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_classes/130",
+        "o:id": 130
+    },
+    "o:resource_template": {
+        "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/resource_templates/3",
+        "o:id": 3
+    },
+    "o:thumbnail": null,
+    "o:title": "Norman Thavaud",
+    "thumbnail_display_urls": {
+        "large": "http://localhost/omeka-s-3.0.1/omeka-s/files/large/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg",
+        "medium": "http://localhost/omeka-s-3.0.1/omeka-s/files/medium/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg",
+        "square": "http://localhost/omeka-s-3.0.1/omeka-s/files/square/76df5f13be6d5efa7ce26915d28502ad024ae7b3.jpg"
+    },
+    "o:created": {
+        "@value": "2020-11-15T13:15:51+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:modified": {
+        "@value": "2020-11-29T11:00:26+00:00",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "o:media": [
+        {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/media/21",
+            "o:id": 21
+        }
+    ],
+    "o:item_set": [
+        {
+            "@id": "http://localhost/omeka-s-3.0.1/omeka-s/api/item_sets/16",
+            "o:id": 16
+        }
+    ],
+    "o:site": [],
+    "foaf:firstName": [
+        {
+            "type": "literal",
+            "property_id": 139,
+            "property_label": "firstName",
+            "is_public": true,
+            "@value": "Norman"
+        }
+    ],
+    "foaf:family_name": [
+        {
+            "type": "literal",
+            "property_id": 144,
+            "property_label": "family_name",
+            "is_public": true,
+            "@value": "Thavaud"
+        }
+    ],
+    "foaf:interest": [
+        {
+            "type": "literal",
+            "property_id": 163,
+            "property_label": "interest",
+            "is_public": true,
+            "@value": "Acteur, doubleur, humoriste"
+        }
+    ],
+    "foaf:birthday": [
+        {
+            "type": "literal",
+            "property_id": 182,
+            "property_label": "birthday",
+            "is_public": true,
+            "@value": "1987-04-14"
+        }
+    ],
+    "chaine:voc.ttlhasChannel": [
+        {
+            "type": "literal",
+            "property_id": 223,
+            "property_label": "hasChannel",
+            "is_public": true,
+            "@value": "Norman fait des vidéos"
+        }, 
+        {
+            "type": "uri",
+            "property_id": 223,
+            "property_label": "hasChannel",
+            "is_public": true,
+            "@id": "https://www.youtube.com/user/NormanFaitDesVideos"
+        }
+    ],
+    "dcterms:title": [
+        {
+            "type": "literal",
+            "property_id": 1,
+            "property_label": "Title",
+            "is_public": true,
+            "@value": "Norman Thavaud "
+        }
+    ]
+}
