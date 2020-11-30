@@ -1,8 +1,21 @@
 var paramPrenom = window.location.search.substring(5);
 
-d3.json("../data/" + paramPrenom + ".json", function(error, data) {
+/* d3.json("../data/" + paramPrenom + ".json", function(error, data) {
     infoData(data); 
-});
+}); */
+
+let url = "https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g4/omk"; 
+
+d3.csv("../data/api.csv", function(data) {
+    data.forEach(function(d) {
+        if (d.titre.includes(paramPrenom)) {
+            console.log(d); 
+            d3.json(url + d.url, function(res) {
+                infoData(res);
+            });
+        }
+    }) 
+})
 
 function infoData(data) {
     var media = d3.select('#media')

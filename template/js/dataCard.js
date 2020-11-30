@@ -1,7 +1,19 @@
-d3.json("../data/items.json", function(error, data) {
+/* d3.json("../data/items.json", function(error, data) {
     console.log(data); 
     displayItems(data); 
-});
+}); */
+
+let url = "https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g4/omk"; 
+
+d3.csv("../data/api.csv", function(data) {
+    data.forEach(function(d) {
+        if (d.titre === 'Liste des youtubeurs') {
+            d3.json(url + d.url, function(res) {
+                displayItems(res);
+            });
+        }
+    }) 
+})
 
 function displayItems(data) {
 
