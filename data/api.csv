@@ -1,14 +1,24 @@
 titre,url
 Lucas Hauchard,/api/items/2
 Cyprien Iov,/api/items/3
+Nathalie Odzierejko,/api/items/25
+Yvick Letexier,/api/items/28
+Corentin Houssein,/api/items/31
+Germain O'Livry,/api/items/37
+Marie Lopez,/api/items/40
 Norman Thavaud,/api/items/4
 Squeezie,/api/items/5
 Cyprien,/api/items/6
 Norman Fait des videos,/api/items/7
+Natoo,/api/items/27
+Mister V,/api/items/30
+Gotaga,/api/items/33
+Dr Nozman,/api/items/39
+EnjoyPhoenix,/api/items/42
 Mélanie,/api/items/8
 Kamal,/api/items/9
 Halim,/api/items/10
 Ibrahim,/api/items/11
-Liste des youtubeurs,/api/items?resource_class_id%5B%5D=130
-Liste des utilisateurs,/api/items?resource_class_id%5B%5D=94
-Liste des chaines,/api/items?resource_class_id%5B%5D=131
+Liste des youtubeurs,/api/items?item_set_id%5B%5D=16
+Liste des utilisateurs,/api/items?item_set_id%5B%5D=18
+Liste des chaines,/api/items?item_set_id%5B%5D=17

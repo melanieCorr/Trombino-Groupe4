@@ -21,6 +21,33 @@
                 <h5> Année 2020 - 2021 </h5>
             </div>
             <hr>
+            <div class="d-inline-flex">  
+                <div class="dropdown" style="margin: 20px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Genre de vidéos
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="genreFilter('Tous')"> Tous </a>
+                        <a class="dropdown-item" onclick="genreFilter('Jeu vidéo')"> Jeux-vidéos </a>
+                        <a class="dropdown-item" onclick="genreFilter('Podcast')"> Podcasts </a>
+                        <a class="dropdown-item" onclick="genreFilter('Court métrage')"> Courts métrages </a>
+                        <a class="dropdown-item" onclick="genreFilter('Science')"> Sciences </a>
+                        <a class="dropdown-item" onclick="genreFilter('Beauté')"> Beauté </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex">  
+                <div class="dropdown" style="margin: 20px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Date de création de la chaîne
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="dateFilter('Tous')"> Tous </a>
+                        <a class="dropdown-item" onclick="dateFilter(2000, 2010)"> Entre 2000 et 2010 </a>
+                        <a class="dropdown-item" onclick="dateFilter(2010, 2020)"> Entre 2010 et 2020 </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="youtube-cards-items"></div>
