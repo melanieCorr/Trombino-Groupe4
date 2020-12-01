@@ -3,6 +3,17 @@
     displayItems(data); 
 }); */
 
+let channelData = [
+    { youtubeur: 'Squeezie', abos: 15.3, views: 7686814129, videos: 1364 }, 
+    { youtubeur: 'Cyprien', abos: 13.9, views: 2664468413, videos: 176 }, 
+    { youtubeur: 'Norman fait des vidéos', abos: 12.2, views: 2521173283, videos: 185 }, 
+    { youtubeur: 'Natoo', abos: 5.17, views: 2521173283, videos: 112 }, 
+    { youtubeur: 'Mister V', abos: 5.68, views: 407316090, videos: 32 }, 
+    { youtubeur: 'Gotaga', abos: 3.66, views: 655617879, videos: 905 }, 
+    { youtubeur: 'Dr Nozman', abos: 3.7, views: 655617879, videos: 425 }, 
+    { youtubeur: 'EnjoyPhoenix', abos: 3.67, views: 598749542, videos: 782 }
+];
+
 let url = "https://jardindesconnaissances.univ-paris8.fr/THYP/20-21/g4/omk"; 
 let dataYoutubeurs; 
 let dataChaines; 
@@ -13,9 +24,7 @@ d3.queue().defer(d3.csv, '../data/api.csv')
         results.forEach(function(res) {
             res.forEach(api => {
                 if (api.titre === 'Liste des youtubeurs') {
-                    console.log(api)
                     d3.json(url + api.url, function(res) {
-                        console.log(res)
                         displayItems(res); 
                         dataYoutubeurs = res; 
                     });
@@ -51,6 +60,22 @@ function displayItems(data) {
                 'src="' + d["thumbnail_display_urls"]["square"] + '" alt="' + d["chaine:voc.ttlhasChannel"][0]["@value"] + '" />'; 
             return img
         })
+
+    let abos = [], views = [], videos = []; 
+    channelData.forEach((data, id) => {
+        let youtubeur = data.youtubeur; 
+        let nbAbos = data.abos; 
+        let nbViews = data.views; 
+        let nbVideos = data.videos; 
+
+        abos.push({ youtubeur: youtubeur, importance: nbAbos, id: id }); 
+        views.push({ youtubeur: youtubeur, importance: nbViews, id: id });
+        videos.push({ youtubeur: youtubeur, importance: nbVideos, id: id });
+    })
+
+    drawChart(150, abos, 'Nombre d\'abonnés'); 
+    drawChart(150, views, 'Nombre de vues'); 
+    drawChart(150, videos, 'Nombre de vidéos'); 
 }
 
 function genreFilter(genre) {
@@ -103,5 +128,143 @@ function dateFilter(date1, date2) {
             })
             displayItems(youtubeurs)
         }, 1000); 
+    }
+}
+
+function abosFilter(num1, num2) {
+    let cards = document.getElementById('youtube-cards-items'); 
+    cards.innerHTML = ''; 
+    if (num1 === 'Tous') {
+        setTimeout(() => {
+            displayItems(dataYoutubeurs); 
+        }, 1000);
+    } 
+    else {
+        setTimeout(() => {
+            let youtubeurs = [];
+            channelData.forEach(data => {
+                if (data.abos >= num1 && data.abos <= num2) {
+                    dataYoutubeurs.forEach(youtube => {
+                        if (youtube['chaine:voc.ttlhasChannel'][0]['@value'].includes(data.youtubeur)) {
+                            youtubeurs.push(youtube); 
+                        }
+                    })
+                }
+            })
+            displayItems(youtubeurs);
+        }, 1000); 
+    }
+}
+
+function viewsFilter(num1, num2) {
+    let cards = document.getElementById('youtube-cards-items'); 
+    cards.innerHTML = ''; 
+    if (num1 === 'Tous') {
+        setTimeout(() => {
+            displayItems(dataYoutubeurs); 
+        }, 1000);
+    } 
+    else {
+        setTimeout(() => {
+            let youtubeurs = [];
+            channelData.forEach(data => {
+                if (data.views >= num1 && data.views <= num2) {
+                    dataYoutubeurs.forEach(youtube => {
+                        if (youtube['chaine:voc.ttlhasChannel'][0]['@value'].includes(data.youtubeur)) {
+                            youtubeurs.push(youtube); 
+                        }
+                    })
+                }
+            })
+            displayItems(youtubeurs);
+        }, 1000); 
+    }
+}
+
+function videosFilter(num1, num2) {
+    let cards = document.getElementById('youtube-cards-items'); 
+    cards.innerHTML = ''; 
+    if (num1 === 'Tous') {
+        setTimeout(() => {
+            displayItems(dataYoutubeurs); 
+        }, 1000);
+    } 
+    else {
+        setTimeout(() => {
+            let youtubeurs = [];
+            channelData.forEach(data => {
+                if (data.videos >= num1 && data.videos <= num2) {
+                    dataYoutubeurs.forEach(youtube => {
+                        if (youtube['chaine:voc.ttlhasChannel'][0]['@value'].includes(data.youtubeur)) {
+                            youtubeurs.push(youtube); 
+                        }
+                    })
+                }
+            })
+            displayItems(youtubeurs);
+        }, 1000); 
+    }
+}
+
+
+function drawChart(size, data, title) {
+    var w = size, h = size, radius = Math.min(w, h) / 2; 
+    var floatFormat = d3.format('.4r'); 
+    var color = d3.scaleOrdinal(d3.schemeCategory20b);
+
+    var wSvg = w + 10 + 0, hSvg = h + 10 + 10; 
+    var svg = d3.select('#chart').append('svg')
+        .attr('width', wSvg).attr('height', hSvg)
+        .append('g').attr('transform', 'translate(' + (wSvg / 2) + ',' + (hSvg / 2) + ')');
+    
+    var arc = d3.arc().innerRadius(radius * 0.5).outerRadius(radius * 0.8); 
+
+    var pie = d3.pie().value(function(d) { return floatFormat(d['importance']) }).sort(null); 
+
+    var tooltip = d3.select('#chart').append('div').attr('class', 'tooltip'); 
+        tooltip.append('div').attr('class', 'label'); 
+
+    svg.append('g').attr('class', 'slices');
+
+    var path = svg.select('.slices').datum(data).selectAll('path').data(pie).enter()
+        .append('path').attr('d', arc).attr('fill', function(d) {
+            d.couleur = color(d.data['youtubeur']); 
+            return d.couleur; 
+        }); 
+    
+    svg.append('text').html(title).attr('text-anchor', 'middle').attr('y', hSvg / 2); 
+
+    path.on('mouseenter', function(data) {
+        tooltip.transition()
+            .duration(200)
+            .style("opacity", .9);
+        tooltip.html(toolTipHTML(data))
+            .style('background', data.couleur)
+            .style("left", (d3.event.pageX) + "px")
+            .style("top", (d3.event.pageY - 28) + "px");
+    })
+
+    path.on('mouseout', function () {
+        d3.selectAll('.toolCircle').remove();           		                    
+        tooltip.transition()
+            .duration(500)
+            .style("opacity", 0);
+    });
+
+    function toolTipHTML(data) {
+        let str; 
+        if (title === 'Nombre d\'abonnés') {
+            str = 'M'; 
+        }
+        else if (title === 'Nombre de vues') {
+            str = ' de vues'; 
+        }
+        else {
+            str = ' de vidéos';
+        }
+        var tip = '<h6 class="card-title">' + data.data.youtubeur + '</h6>'
+            tip += '<p class="card-text">' + data.data.importance + str + '</p>';
+        
+        return tip; 
     }
 }

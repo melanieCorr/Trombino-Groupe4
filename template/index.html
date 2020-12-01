@@ -48,6 +48,49 @@
                     </div>
                 </div>
             </div>
+            <div class="d-inline-flex">  
+                <div class="dropdown" style="margin: 20px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Nombre d'abonnés
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="abosFilter('Tous')"> Tous </a>
+                        <a class="dropdown-item" onclick="abosFilter(1, 5)"> Entre 1M et 5M </a>
+                        <a class="dropdown-item" onclick="abosFilter(5, 10)"> Entre 5M et 10M </a>
+                        <a class="dropdown-item" onclick="abosFilter(10, 15)"> Entre 10M et 15M </a>
+                        <a class="dropdown-item" onclick="abosFilter(15, 20)"> Entre 15M et 20M </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex">  
+                <div class="dropdown" style="margin: 20px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Nombre de vues
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="viewsFilter('Tous')"> Tous </a>
+                        <a class="dropdown-item" onclick="viewsFilter(100000000, 1000000000)"> Entre 100000000 et 1000000000 </a>
+                        <a class="dropdown-item" onclick="viewsFilter(1000000000, 5000000000)"> Entre 1000000000 et 5000000000 </a>
+                        <a class="dropdown-item" onclick="viewsFilter(5000000000, 10000000000)"> Entre 5000000000 et 10000000000 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-inline-flex">  
+                <div class="dropdown" style="margin: 20px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        Nombre de vidéos
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" onclick="videosFilter('Tous')"> Tous </a>
+                        <a class="dropdown-item" onclick="videosFilter(0, 100)"> Moins de 100 </a>
+                        <a class="dropdown-item" onclick="videosFilter(100, 500)"> Entre 100 et 500 </a>
+                        <a class="dropdown-item" onclick="videosFilter(500, 1000)"> Entre 500 et 1000 </a>
+                        <a class="dropdown-item" onclick="videosFilter(1000, 1500)"> Entre 1000 et 1500 </a>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div id="chart" class="text-center" > </div>
         </div>
 
         <div id="youtube-cards-items"></div>
