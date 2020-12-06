@@ -103,6 +103,7 @@ function displayItems(data) {
 }
 
 function genreFilter(genre) {
+    hideSpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (genre === 'Tous') {
@@ -128,6 +129,7 @@ function genreFilter(genre) {
 }
 
 function dateFilter(date1, date2) {
+    hideSpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (date1 === 'Tous') {
@@ -156,6 +158,7 @@ function dateFilter(date1, date2) {
 }
 
 function abosFilter(num1, num2) {
+    hideSpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (num1 === 'Tous') {
@@ -181,6 +184,7 @@ function abosFilter(num1, num2) {
 }
 
 function viewsFilter(num1, num2) {
+    hideSpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (num1 === 'Tous') {
@@ -206,6 +210,7 @@ function viewsFilter(num1, num2) {
 }
 
 function videosFilter(num1, num2) {
+    hideSpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (num1 === 'Tous') {
