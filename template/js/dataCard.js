@@ -46,22 +46,11 @@ function displaySpinners() {
       document.getElementById("chart").style.display = "none";
     }
 function RechercheByName() {
-      displaySpinners();
-      localStorage.clear();
-      var name = document.getElementById('searchByName').value;
-      console.log(name);
-      if (name == "") {
-        setData(csv_data, false);
+    hideSpinners();
+    let cards = document.getElementById('youtube-cards-items'); 
+    cards.innerHTML = ''; 
 
-        return;
-      }
-      dataForm = csv_data[0];
-      console.log(csv_data);
-      new_data = dataForm.filter(function (d) { return d["foaf:firstName"][0]["@value"].toLowerCase() + " " + d["foaf:family_name"][0]["@value"].toLowerCase() == name.toLowerCase(); });
-      console.log(new_data);
-      setData(new_data, true);
-
-    }
+   }
 function displayItems(data) {
     
     var card = d3.select('#youtube-cards-items').selectAll('div').data(data).enter().append('div')
@@ -100,7 +89,7 @@ function displayItems(data) {
     drawChart(150, abos, 'Nombre d\'abonnés'); 
     drawChart(150, views, 'Nombre de vues'); 
     drawChart(150, videos, 'Nombre de vidéos'); 
-    displaySpinners();
+    
 }
 
 function genreFilter(genre) {
