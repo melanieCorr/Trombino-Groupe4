@@ -103,7 +103,8 @@ function displayItems(data) {
 }
 
 function genreFilter(genre) {
-    
+    hideSpinners();
+    displaySpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (genre === 'Tous') {
