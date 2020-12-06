@@ -37,7 +37,31 @@ d3.queue().defer(d3.csv, '../data/api.csv')
             }) 
         }) 
     }); 
+function displaySpinners() {
+    
+      document.getElementById("spinner2").style.display = "block";
+    }
+    function hideSpinners() {
+  
+      document.getElementById("spinner2").style.display = "none";
+    }
+function RechercheByName() {
+      displaySpinners();
+      localStorage.clear();
+      var name = document.getElementById('searchByName').value;
+      console.log(name);
+      if (name == "") {
+        setData(csv_data, false);
 
+        return;
+      }
+      dataForm = csv_data[0];
+      console.log(csv_data);
+      new_data = dataForm.filter(function (d) { return d["foaf:firstName"][0]["@value"].toLowerCase() + " " + d["foaf:family_name"][0]["@value"].toLowerCase() == name.toLowerCase(); });
+      console.log(new_data);
+      setData(new_data, true);
+
+    }
 function displayItems(data) {
     
     var card = d3.select('#youtube-cards-items').selectAll('div').data(data).enter().append('div')
