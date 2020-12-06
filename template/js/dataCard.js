@@ -100,11 +100,11 @@ function displayItems(data) {
     drawChart(150, abos, 'Nombre d\'abonnés'); 
     drawChart(150, views, 'Nombre de vues'); 
     drawChart(150, videos, 'Nombre de vidéos'); 
+    displaySpinners();
 }
 
 function genreFilter(genre) {
     hideSpinners();
-    displaySpinners();
     let cards = document.getElementById('youtube-cards-items'); 
     cards.innerHTML = ''; 
     if (genre === 'Tous') {
