@@ -39,11 +39,11 @@ d3.queue().defer(d3.csv, '../data/api.csv')
     }); 
 function displaySpinners() {
     
-      document.getElementById("spinner2").style.display = "block";
+      document.getElementById("chart").style.display = "block";
     }
     function hideSpinners() {
   
-      document.getElementById("spinner2").style.display = "none";
+      document.getElementById("chart").style.display = "none";
     }
 function RechercheByName() {
       displaySpinners();
